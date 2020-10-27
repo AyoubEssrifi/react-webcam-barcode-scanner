@@ -1,12 +1,12 @@
 {
-  "name": "react-webcam-barcode-scanner",
-  "version": "0.0.2-rc2",
-  "description": "A simple React Component using the client's webcam to read barcodes.",
+  "name": "react-webcam-barcode-scanner2",
+  "version": "0.0.6-rc2",
+  "description": "A simple React Component using the client's webcam to read barcodes with inverse barcode support",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx --fix",
-    "build": "rm -rf dist && tsc --build tsconfig.json",
+    "build": "del -f dist && tsc --build tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -34,8 +34,8 @@
   },
   "dependencies": {
     "@types/react": "^16.9.35",
-    "@zxing/library": "^0.17.0",
-    "react-webcam": "^5.0.1"
+    "react-webcam": "^5.0.1",
+    "zxing-library2": "^0.18.6"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.33.0",
